@@ -1,0 +1,135 @@
+/* 
+
+colors
+---------------
+https://coolors.co/e4572e-17bebb-ffc914-2e282a-76b041
+
+#E4572E
+#17BEBB
+#FFC914
+#2E282A 
+#76B041 
+#8F0F36
+
+#111116
+#181a1e
+*/
+
+body,html{
+    padding:0px;margin:0px;
+    font-size:10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:#181a1e;
+    color:white;
+
+
+    --color-01: #E4572E;
+
+}
+
+/* base */
+.app{
+    width:100%;
+    height:100vh;
+}
+.app.loading{
+    display:none;
+}
+
+.logo{
+    position: absolute;
+    top:.5em;
+    left:1em;
+    width:20em;
+    z-index:100;
+    font-size:2.2em;
+    font-family: 'Pacifico', cursive;
+}
+
+.info{
+    position: absolute;
+    top:2.5em;
+    right:1em;
+    width:50em;
+    height:4em;
+    z-index:100;
+    text-align:right;
+    text-transform: lowercase;
+}
+.info ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size:1.5em;
+    font-weight: 700;
+}
+.info li{
+    display: inline-block;
+    padding:.3em 1em; 
+    cursor:pointer;
+    position: relative;
+    top:0;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity:.7;
+}
+.info li:hover{
+    opacity:1;
+}
+.grid{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(3,33.33%);
+    column-gap: 2em;
+    margin: 0 auto;
+    padding-top: 20vh;
+    width: 700px;
+}
+.grid .box{
+    font-weight:700;
+    height:20em;
+    margin-bottom:2em;
+    padding-left:7em;
+    text-transform: lowercase;
+    letter-spacing: .1em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box h2{
+    font-size:2.2em;
+    margin-bottom:1.5em;
+    color: white;
+}
+.box a{
+    color:rgba(255,255,255,.6);
+    font-size:1.5em;
+    padding-bottom:1.3em;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.box a:hover{
+    color: var(--color-01);
+}
+.hover-holder{
+    display:none;
+    width:10em;
+    height:10em;
+    background-color:#E4572E;
+    position:absolute;
+    top:0;
+    left:0;
+    background-position: center center;
+    background-size: contain;
+}
+.hover-image{
+    display:none;
+    height:20em;
+    position:absolute;
+    top:0;
+    left:0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
